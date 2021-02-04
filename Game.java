@@ -1,33 +1,48 @@
 
 /**
- * Write a description of class Game here.
+ * Plays the game encorporating the rules
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Andrew Thein
+ * @version 2021-2-04
  */
+import java.util.Scanner;
 public class Game
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Game
-     */
-    public Game()
+    public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Die d1 = new Die();
+        Die d2 = new Die();
+        
+        
+        int total = d1.roll() + d2.roll();
+        if (total == 7 || total == 11)
+        {
+            // won the game
+        }
+        else if (total == 2 || total == 3 || total == 12)
+        {
+            // lost the game
+        }
+        
+        else //haven't won or lost game
+        {
+            int point = total;
+            total = d1.roll() + d2.roll();
+            while (total != 7 && total != point)
+            {
+                // haven't won or lost yet
+                total = d1.roll() + d2.roll();
+            }
+            
+            if (total == point)
+            {
+                // won game
+            }
+            
+            else 
+            {
+                // lost game
+            }
+        }
     }
 }
