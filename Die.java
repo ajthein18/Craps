@@ -1,33 +1,32 @@
 
 /**
- * Write a description of class Die here.
+ * Rolls a die
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Andrew Thein
+ * @version 2020-2-02
  */
 public class Die
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    int roll;
+    
     /**
-     * Constructor for objects of class Die
+     * Creates an empty constructor
      */
     public Die()
     {
-        // initialise instance variables
-        x = 0;
+        this.roll = -1;
     }
-
+    
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Rolls the die
+     * 
+     * @return the result of the rull
      */
-    public int sampleMethod(int y)
+    public int roll()
     {
-        // put your code here
-        return x + y;
+        roll = (int) ((Math.random() * 6) + 1);
+        return roll;
     }
+    
 }
