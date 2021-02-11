@@ -8,7 +8,7 @@
 import java.util.Scanner;
 public class Game
 {
-    public static void main(String[] args)
+    public static void play()
     {
         Die d1 = new Die();
         Die d2 = new Die();
