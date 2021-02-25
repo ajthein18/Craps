@@ -36,3 +36,22 @@ public class Craps
         }
     }
 }
+
+
+/* 
+
+COMMENTS FROM THE INSTRUCTOR:
+
+Really nice job of implementing this, Andrew! I love how you broke out the
+game into its own class, leaving the main() method to call that class--you
+could have done the same thing with the instructions, of course, to clean
+it up even further.
+
+You didn't implement the default (Y/n) feature as indicated in the project
+handout--that's something you should consider for next time. In the meantime,
+this is good work! Keep it up!
+
+SCORE: 15/15
+
+*/
+
